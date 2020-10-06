@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.title {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title span h1 {
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-bar {
+  width: 60%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-bar input {
+  width: 100%;
+  height: 3.2rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.tasks-container {
+  margin: 0 auto;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
+  width: 60%;
+}
+
+.task-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+  height: 54px;
+  background-color: rgba(200, 214, 229, 0.3);
+  border: none;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.1s ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.task-container:hover {
+  transform: scale(1.01);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-content {
+  padding-left: 30px;
+  font-size: 1.6rem;
+  color: #e3e3e3;
+}
+
+.task-edit {
+  background-color: rgba(200, 200, 200, 0.2);
+  font-size: 1.5rem;
+  margin-left: 30px;
+  padding: 0.5px 0 0.5px 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.task-edit::placeholder {
+  color: rgba(238, 82, 83, 0.5);
+}
+
+.task-function {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  padding-right: 30px;
+}
+
+.task-function button {
+  width: 85px;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(200, 200, 200, 0.5);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  outline: none;
+}
+
+.task-function button:hover {
+  background-color: rgba(254, 202, 87, 1);
+  color: rgba(87, 101, 116, 1);
 }
