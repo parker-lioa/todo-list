@@ -24,6 +24,7 @@ export default class App extends Component {
       tasks.push({ content: this.state.inputContent, time: Date.now() });
       this.setState({
         tasks: tasks,
+        inputContent: "",
       });
 
       localStorage.setItem("tasks", JSON.stringify(tasks));
