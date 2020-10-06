@@ -1,15 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 
-
-*{
+* {
   box-sizing: border-box;
-  font-size:16px;
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-  padding:0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  background-image:url('./assets/image/todo_1.jpg');
+body {
+  
+  background-image: url("./assets/image/todo_1.jpg");
   background-size: cover;
+}
+
+@media screen and (max-width: 1105px) {
+  * {
+    font-size: 14px;
+  }
+  body {
+    background-image: url(./assets/image/todo.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 11px;
+  }
+  body {
+    background-image: url(./assets/image/todo_2.jpg);
+    background-size: 180%;
+    background-position: center top;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    background-size: 200%;
+  }
 }
